@@ -1,6 +1,7 @@
 # import discord.py
 import discord
-
+from discord.ext  import commands
+from discord.ext.commands import Bot
 #import the os module
 
 import os
@@ -14,7 +15,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 
 # gets the client object from discord.py
-bot = discord.Client(intents=discord.Intents.default())
+bot = discord.Client(intents=discord.Intents.all())
 
 #Event listener for whemn the bot has been switched from offline to online
 @bot.event
@@ -36,10 +37,12 @@ async def on_ready():
 @bot.event
 async def on_message(message):
 	#checks if the message that was sent is equal to "HELLO"
-	if message.content == "hello":
-	
-		#sends back a message to the channel
-		await message.channel.send("YOOOOOOO")
+	if message.author == bot.user:
+		return
 
+	if message.content == 'hello':
+		#sends back a message to the channel
+		await message.channel.send('YOOOOOOO')
+		
 # EXECUTE THE BOT
 bot.run(DISCORD_TOKEN)
