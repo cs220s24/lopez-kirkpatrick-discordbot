@@ -14,7 +14,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 
 
 # gets the client object from discord.py
-bot = discord.Client()
+bot = discord.Client(intents=discord.Intents.default())
 
 #Event listener for whemn the bot has been switched from offline to online
 @bot.event
