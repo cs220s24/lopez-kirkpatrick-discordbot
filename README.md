@@ -2,4 +2,4 @@
 Overview - 
 Setup -
 Technologies Used - 
-Background - 
+Background - https://builtin.com/software-engineering-perspectives/discord-bot-python
