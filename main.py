@@ -29,7 +29,7 @@ os.system('redis-server --daemonize yes')
 #connect to the redis server
 
 r = redis.Redis(host=host, port=port)
-r.set('num_jokes', 1)
+
 def get_num_jokes():
     num_jokes = r.get('num_jokes')
     if num_jokes == None:
