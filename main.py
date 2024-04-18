@@ -44,6 +44,13 @@ def get_joke():
     else:
         joke = r.get(f'joke{int(random.random()*num_jokes)}')
         return str(joke)[2:-1]
+    
+def get_joke_n(n):
+    try:
+        joke = r.get(f'joke{n}')
+        return str(joke)[2:-1]
+    except:
+        return "Joke not found!"
 
 def append_joke(joke):
     if get_num_jokes() == 0:
@@ -87,6 +94,9 @@ async def on_message(message):
     if '!addjoke ' in message.content:
         affirmation = append_joke(message.content.removeprefix('!addjoke '))
         await message.channel.send(affirmation)
+
+    if '!getjoke ' in message.content:
+        await message.channel.send(get_joke_n())
 
 # EXECUTE THE BOT
 bot.run(DISCORD_TOKEN)
