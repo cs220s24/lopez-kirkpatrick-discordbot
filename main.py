@@ -42,7 +42,6 @@ def get_joke():
     if num_jokes == 0:
         return "Why did the chicken cross the road? To get to the other side!"
     else:
-        print(f"num_jokes:{num_jokes}")
         joke = r.get(f'joke{int(random.random()*num_jokes)}')
         return str(joke)[2:-1]
 
