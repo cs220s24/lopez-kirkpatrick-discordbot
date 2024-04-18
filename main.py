@@ -39,7 +39,7 @@ def get_num_jokes():
 
 def get_joke():
     num_jokes = get_num_jokes()
-    if num_jokes == None:
+    if num_jokes == 0:
         return "Why did the chicken cross the road? To get to the other side!"
     else:
         print(f"num_jokes:{num_jokes}")
@@ -47,7 +47,7 @@ def get_joke():
         return str(joke)[2:-1]
 
 def append_joke(joke):
-    if get_num_jokes() == None:
+    if get_num_jokes() == 0:
         r.set('num_jokes', 0)
     num_jokes = get_num_jokes()
     r.set(f'joke{num_jokes}', joke)
