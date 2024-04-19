@@ -9,9 +9,9 @@ Setup
 
 To Run Locally 
 
-Clone the repository
-add .env file with DISCORD_TOKEN
-Run the deploy.sh file
+1. Clone the repository
+2. add .env file with DISCORD_TOKEN
+3. Run the deploy.sh file
 
 Technologies Used 
 
