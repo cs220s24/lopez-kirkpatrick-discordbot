@@ -47,7 +47,7 @@ def get_joke():
     
 def get_joke_n(n):
 
-    if int(n) + 1 > get_num_jokes() or int(n) <= 0:
+    if int(n) + 1 > get_num_jokes() or int(n) < 0:
        return "Joke not found!"
 
     else: 
