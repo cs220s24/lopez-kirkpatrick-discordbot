@@ -6,4 +6,6 @@ After=redis6.service
 ExecStart=/home/ec2-user/lopez-kirkpatrick-discordbot/.venv/bin/python 
 /home/ec2-user/lopez-kirkpatrick-discordbot/main.py
 
+[Install]
+WantedBy=multi-user.target
 
