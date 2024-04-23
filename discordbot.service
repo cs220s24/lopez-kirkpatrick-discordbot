@@ -1,9 +1,10 @@
 [Unit]
-Description=Launch the collector process
+Description=Launch the discordbot
 After=redis6.service
 
 [Service]
-ExecStart=/home/ec2-user/lopez-kirkpatrick-discordbot/.venv/bin/python 
-/home/ec2-user/lopez-kirkpatrick-discordbot/main.py
+ExecStart=/home/ec2-user/lopez-kirkpatrick-discordbot/.venv/bin/python /home/ec2-user/lopez-kirkpatrick-discordbot/main.py
 
+[Install]
+WantedBy=multi-user.target
 
