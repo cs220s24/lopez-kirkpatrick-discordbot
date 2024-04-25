@@ -1,4 +1,4 @@
-docker build -t discordbot .
-docker network create net
-docker run --name redis --netowrk net -d redis
+docker build -t discord-bot .
+docker network create dnet
+docker run --name redis --network dnet -d redis
 
