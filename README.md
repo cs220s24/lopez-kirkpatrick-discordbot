@@ -2,6 +2,8 @@
 
 # Overview
 
+<img width="1068" alt="Screenshot 2024-04-25 at 9 46 18 AM" src="https://github.com/cs220s24/lopez-kirkpatrick-discordbot/assets/109396828/d6ff2443-b8fc-49e5-b9b3-4435b6fb6ed0">
+
 This is a simple discord bot that can tell jokes. This Discord bot gets jokes from a redis database. There are commands to add a joke to the data base, get a random joke from the data base, and get a specific joke from the data base. You can also say hello to the bot, and it will greet you back!
 
 
@@ -10,7 +12,7 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 ## **To run Locally**
 
 1. Clone the repository
-2. add .env file with DISCORD_TOKEN=(bot token)
+2. add .env file with DISCORD_TOKEN="bot token"
 3. Run `./deploy.sh`
 
 
@@ -20,7 +22,7 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 2. `sudo yum install -y git`
 3. `sudo yum install -y redis6`
 4. Clone the repo
-5. Add a .env file with DISCORD_TOKEN=(bot token)
+5. Add a .env file with DISCORD_TOKEN="bot token"
 6. Run `./aws_setup.sh`
 7. Run `./aws_launch.sh`
 8. To stop the Discord bot, run `./aws_stop.sh`
@@ -33,9 +35,10 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 4. Clone the repo
 5. Run `./aws_docker.sh`
 6. Log out and log back in to the EC2 Instance
-7. Run `./dockstart.sh`
-8. Run `docker run --name discord-bot -d --network dnet -e DISCORD_TOKEN=<token> -e REDIS_HOST=redis discord-bot`
-9. To stop the Discord bot, run `./dockstop.sh`
+7. Add a .env file with DISCORD_TOKEN=bot token AND REDIS_HOST=redis (NOTE: Do not put quotations around the bot token) 
+8. Run `./dockstart.sh`
+9. Run `docker run --name discord-bot -d --network dnet --env-file ./.env discord-bot`
+10. To stop the Discord bot, run `./dockstop.sh`
 
 # Technologies Used 
 
@@ -45,7 +48,6 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 - Discord - https://discord.com
 - Discord Developer Portal - https://discord.com/developers/docs/intro
 - Docker - https://www.docker.com
-
 
 
 # Background
