@@ -10,7 +10,7 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 ## **To run Locally**
 
 1. Clone the repository
-2. add .env file with DISCORD_TOKEN
+2. add .env file with DISCORD_TOKEN=(bot token)
 3. Run `./deploy.sh`
 
 
@@ -20,7 +20,7 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 2. `sudo yum install -y git`
 3. `sudo yum install -y redis6`
 4. Clone the repo
-5. Add a .env file with DISCORD_TOKEN=<token>
+5. Add a .env file with DISCORD_TOKEN=(bot token)
 6. Run `./aws_setup.sh`
 7. Run `./aws_launch.sh`
 8. To stop the Discord bot, run `./aws_stop.sh`
