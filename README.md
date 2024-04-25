@@ -2,7 +2,8 @@
 
 # Overview
 
-<img width="1068" alt="Screenshot 2024-04-25 at 9 46 18 AM" src="https://github.com/cs220s24/lopez-kirkpatrick-discordbot/assets/109396828/d6ff2443-b8fc-49e5-b9b3-4435b6fb6ed0">
+<img width="882" alt="Screenshot 2024-04-25 at 9 54 22 AM" src="https://github.com/cs220s24/lopez-kirkpatrick-discordbot/assets/109396828/6e5fb82a-945b-43d7-923c-913514cbd185">
+
 
 This is a simple discord bot that can tell jokes. This Discord bot gets jokes from a redis database. There are commands to add a joke to the data base, get a random joke from the data base, and get a specific joke from the data base. You can also say hello to the bot, and it will greet you back!
 
