@@ -55,6 +55,11 @@ This is a simple discord bot that can tell jokes. This Discord bot gets jokes fr
 
 https://builtin.com/software-engineering-perspectives/discord-bot-python
 
-## Project Contributers
+# Developer Workflow
+
+<img width="778" alt="Screenshot 2024-04-29 at 6 04 38 PM" src="https://github.com/cs220s24/lopez-kirkpatrick-discordbot/assets/109396828/32b36256-6c99-4aac-9c3d-4ce554357bb7">
+
+
+# Project Contributers
 - Braden Kirkpatrick
 - Angel Lopez
